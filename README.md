@@ -1,0 +1,13 @@
+# TernBooking Revenue Optimization
+
+TernBooking's original business model (now outdated because we later pivoted) was to incentivize users to save money towards a vacation by matching 25% of their savings when they hit certain savings milestones. For example, the first milestone was $200, so when a user hit the $200 savings milestone, Ternbooking would give them an additional $50 of travel credit, bringing their total to $250. However, if the user saved $201, their total would only be $251 because the next 25% match wouldn't apply until he/she hit the next savings milestone at $500. The idea behind this was that with the promise of a savings match, users would save more money and spend more through our platform (generating revenue from commissions and fees) which would eventually offset the loss from the match.
+
+Since we set the price for hotels and other travel products, I wrote the TernBooking Revenue Optimization to optimize revenue by keeping users as close to a critical, optimal savings amount, without going over. We felt that if a user saved 80% of the way to the next milestone, they would be encouraged to just save all the way until they hit the next savings milestone; and thus requiring a larger match from us. The assumption was that when users saved 80% of the required amount towards reaching the next milestone, they would be more likely to save the last 20% and therefore maximize their own savings. For example, between the $1,000 and $2,000 savings intervals, we are much more profitable when a user saves $1,800 rather than $2,000 because by reaching $2,000 he/she would trigger the next match and thus cost us $500 instead of just $250 from the $1,000 milestone.
+
+Another important aspect of TernBooking's business model was that users were able to shop for vacation products on our website (hotels, flights, excursions, etc.) and "build" a vacation for themselves which they would then save to their profile as their savings goal. The TernBooking Revenue Optimization model works by pricing their custom built vacation in such a way that the total cost would be at or below that 80% critical value. As the user builds his/her vacation and approaches closer and closer to that critical value, the revenue optimization model would begin deducting the price of the products in their build to keep them under the critical value until a certain point when it would actually be more profitable for us to simply allow them to cross that critical value and reach the next milestone.
+
+In this MATLAB script, we even graphed the results at the end to demonstrate this concept.
+
+## Installation
+
+MATLAB --version R2021a
